@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "ingredient": { "item": "darwinfish:cleaned_pufferfish" },
+  "result": { "id": "darwinfish:roasted_pufferfish" },
+  "experience": 0.35,
+  "cookingtime": 80
+}

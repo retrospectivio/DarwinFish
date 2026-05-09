@@ -1,0 +1,34 @@
+{
+  "entity.darwinfish.pike": "Щука",
+  "item.darwinfish.pike_spawn_egg": "Яйцо призыва щуки",
+  "item.darwinfish.bottled_pike_eggs": "Икра щуки в бутылочке",
+  "item.darwinfish.bread_with_pike_caviar": "Бутерброд с икрой щуки",
+
+  "block.darwinfish.cod_eggs": "Икра трески",
+  "block.darwinfish.salmon_eggs": "Икра лосося",
+  "block.darwinfish.pufferfish_eggs": "Икра иглобрюха",
+  "block.darwinfish.tropical_fish_eggs": "Икра тропической рыбы",
+
+  "item.darwinfish.roasted_tropical_fish": "Жареная тропическая рыба",
+  "item.darwinfish.cleaned_pufferfish": "Очищенный иглобрюх",
+  "item.darwinfish.roasted_pufferfish": "Жареный иглобрюх",
+  "item.darwinfish.toxic_roasted_pufferfish": "Жареный иглобрюх",
+
+  "item.darwinfish.bottled_cod_eggs": "Икра трески в бутылочке",
+  "item.darwinfish.bottled_salmon_eggs": "Икра лосося в бутылочке",
+  "item.darwinfish.bottled_pufferfish_eggs": "Икра иглобрюха в бутылочке",
+  "item.darwinfish.washed_pufferfish_eggs": "Промытая икра иглобрюха",
+  "item.darwinfish.bottled_tropical_fish_eggs": "Икра тропической рыбы в бутылочке",
+
+  "item.darwinfish.bread_with_cod_caviar": "Бутерброд с икрой трески",
+  "item.darwinfish.bread_with_salmon_caviar": "Бутерброд с икрой лосося",
+  "item.darwinfish.bread_with_tropical_caviar": "Бутерброд с икрой тропической рыбы",
+  "item.darwinfish.bread_with_pufferfish_caviar": "Бутерброд с икрой иглобрюха",
+  "item.darwinfish.toxic_bread_with_pufferfish_caviar": "Бутерброд с икрой иглобрюха",
+
+  "entity.darwinfish.baby_cod": "Малёк трески",
+  "entity.darwinfish.baby_salmon": "Малёк лосося",
+  "entity.darwinfish.baby_pufferfish": "Малёк иглобрюха",
+  "entity.darwinfish.baby_tropical_fish": "Малёк тропической рыбы",
+  "entity.darwinfish.baby_pike": "Малёк щуки"
+}

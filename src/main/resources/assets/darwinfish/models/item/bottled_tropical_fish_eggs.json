@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "darwinfish:item/bottled_tropical_fish_egg_layer0",
+    "layer1": "darwinfish:item/bottled_tropical_fish_egg_layer1"
+  }
+}

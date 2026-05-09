@@ -1,0 +1,22 @@
+{
+  "parent": "block/block",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "particle": "darwinfish:block/pike_eggs",
+    "eggs":     "darwinfish:block/pike_eggs"
+  },
+  "elements": [
+    {
+      "from": [3, 0, 3],
+      "to":   [13, 3, 13],
+      "faces": {
+        "down":  { "texture": "#eggs", "cullface": "down" },
+        "up":    { "texture": "#eggs" },
+        "north": { "texture": "#eggs" },
+        "south": { "texture": "#eggs" },
+        "west":  { "texture": "#eggs" },
+        "east":  { "texture": "#eggs" }
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "darwinfish:item/bread_layer",
+    "layer1": "darwinfish:item/tropical_caviar_layer"
+  }
+}

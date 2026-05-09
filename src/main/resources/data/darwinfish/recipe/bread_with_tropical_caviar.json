@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    { "item": "minecraft:bread" },
+    { "item": "darwinfish:bottled_tropical_fish_eggs" }
+  ],
+  "result": { "id": "darwinfish:bread_with_tropical_fish_caviar" }
+}

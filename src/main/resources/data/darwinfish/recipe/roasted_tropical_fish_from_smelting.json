@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "ingredient": { "item": "minecraft:tropical_fish" },
+  "result": { "id": "darwinfish:roasted_tropical_fish" },
+  "experience": 0.35,
+  "cookingtime": 140
+}

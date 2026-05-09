@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "waterlogged=false": { "model": "darwinfish:block/pufferfish_eggs" },
+    "waterlogged=true":  { "model": "darwinfish:block/pufferfish_eggs" }
+  }
+}

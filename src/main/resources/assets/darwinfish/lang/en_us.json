@@ -1,0 +1,34 @@
+{
+  "entity.darwinfish.pike": "Pike",
+  "item.darwinfish.pike_spawn_egg": "Pike Spawn Egg",
+  "item.darwinfish.bottled_pike_eggs": "Bottled Pike Eggs",
+  "item.darwinfish.bread_with_pike_caviar": "Bread with Pike Caviar",
+
+  "block.darwinfish.cod_eggs": "Cod Eggs",
+  "block.darwinfish.salmon_eggs": "Salmon Eggs",
+  "block.darwinfish.pufferfish_eggs": "Pufferfish Eggs",
+  "block.darwinfish.tropical_fish_eggs": "Tropical Fish Eggs",
+
+  "item.darwinfish.roasted_tropical_fish": "Roasted Tropical Fish",
+  "item.darwinfish.cleaned_pufferfish": "Cleaned Pufferfish",
+  "item.darwinfish.roasted_pufferfish": "Roasted Pufferfish",
+  "item.darwinfish.toxic_roasted_pufferfish": "Roasted Pufferfish",
+
+  "item.darwinfish.bottled_cod_eggs": "Bottled Cod Eggs",
+  "item.darwinfish.bottled_salmon_eggs": "Bottled Salmon Eggs",
+  "item.darwinfish.bottled_pufferfish_eggs": "Bottled Pufferfish Eggs",
+  "item.darwinfish.washed_pufferfish_eggs": "Washed Pufferfish Eggs",
+  "item.darwinfish.bottled_tropical_fish_eggs": "Bottled Tropical Fish Eggs",
+
+  "item.darwinfish.bread_with_cod_caviar": "Bread with Cod Caviar",
+  "item.darwinfish.bread_with_salmon_caviar": "Bread with Salmon Caviar",
+  "item.darwinfish.bread_with_tropical_caviar": "Bread with Tropical Caviar",
+  "item.darwinfish.bread_with_pufferfish_caviar": "Bread with Pufferfish Caviar",
+  "item.darwinfish.toxic_bread_with_pufferfish_caviar": "Bread with Pufferfish Caviar",
+
+  "entity.darwinfish.baby_cod": "Baby Cod",
+  "entity.darwinfish.baby_salmon": "Baby Salmon",
+  "entity.darwinfish.baby_pufferfish": "Baby Pufferfish",
+  "entity.darwinfish.baby_pike": "Baby pike",
+  "entity.darwinfish.baby_tropical_fish": "Baby Tropical Fish"
+}
