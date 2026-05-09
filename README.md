@@ -1,25 +1,32 @@
+# 🐟 DarwinFish
 
-Installation information
-=======
+**DarwinFish** — это технический и реалистичный мод для **Minecraft 1.21.1 (NeoForge)**, который полностью перерабатывает систему жизни рыб. Больше никакой бесконечной жизни в одном ведре — теперь рыбы размножаются, растут, охотятся и требуют баланса в экосистеме.
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+## ✨ Основные особенности
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+* **🧬 Реалистичное размножение:** Кормите рыб морской травой или ламинарией, чтобы они начали поиск пары и отложили икру на дно.
+* **🥚 Система инкубации:** Икра — это блок, который со временем созревает. Вы можете собрать её в баночку или дождаться появления мальков.
+* **🎨 Генетика тропических рыб:** При размножении тропические рыбы смешивают цвета своих родителей, создавая уникальные окраски.
+* **🐟 Мальки (Fry):** Новорожденные рыбки маленького размера, которые со временем вырастают во взрослых особей.
+* **🐊 Хищники (Щука):** В мир добавлен новый опасный хищник. Щука охотится только когда голодна, не трогает своих мальков и может атаковать игрока под водой.
+* **🥪 Деликатесы:** Собирайте икру, делайте бутерброды или готовьте жареную щуку.
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+## 🛠 Установка
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+1. Установите **NeoForge** версии **21.1.228** или выше.
+2. Скачайте файл мода `.jar`.
+3. Поместите его в папку `mods` вашего игрового клиента или сервера.
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+## ⚙️ Настройка (Config)
+
+Мод предоставляет гибкие настройки в файле `darwinfish-server.toml`:
+* `naturalBreeding` — включение/выключение автономного размножения без участия игрока.
+* `eggHatchTimeSeconds` — время до вылупления икры.
+* `starvationTime` — время, через которое щука снова проголодается.
+
+## 🐛 Сообщить об ошибке
+
+Если вы нашли баг или у вас есть предложение по улучшению, пожалуйста, создайте тему в разделе [Issues](https://github.com/ТвойНик/DarwinFish/issues).
+
+---
+*Разработано с любовью к виртуальной экологии под лицензией MIT.*
