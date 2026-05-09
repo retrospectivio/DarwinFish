@@ -1,32 +1,31 @@
 # 🐟 DarwinFish
 
-**DarwinFish** — это технический и реалистичный мод для **Minecraft 1.21.1 (NeoForge)**, который полностью перерабатывает систему жизни рыб. Больше никакой бесконечной жизни в одном ведре — теперь рыбы размножаются, растут, охотятся и требуют баланса в экосистеме.
+**DarwinFish** is a technical and realistic mod for **Minecraft 1.21.1 (NeoForge)** that completely overhauls the fish lifecycle system. No more living forever in a single bucket — now fish breed, grow, hunt, and require balance in the ecosystem.
 
-## ✨ Основные особенности
+## ✨ Key Features
 
-* **🧬 Реалистичное размножение:** Кормите рыб морской травой или ламинарией, чтобы они начали поиск пары и отложили икру на дно.
-* **🥚 Система инкубации:** Икра — это блок, который со временем созревает. Вы можете собрать её в баночку или дождаться появления мальков.
-* **🎨 Генетика тропических рыб:** При размножении тропические рыбы смешивают цвета своих родителей, создавая уникальные окраски.
-* **🐟 Мальки (Fry):** Новорожденные рыбки маленького размера, которые со временем вырастают во взрослых особей.
-* **🐊 Хищники (Щука):** В мир добавлен новый опасный хищник. Щука охотится только когда голодна, не трогает своих мальков и может атаковать игрока под водой.
-* **🥪 Деликатесы:** Собирайте икру, делайте бутерброды или готовьте жареную щуку.
+* **🧬 Realistic Breeding:** Feed fish seagrass or kelp to initiate the mating process and lay eggs on the river floor.
+* **🥚 Incubation System:** Fish eggs are blocks that mature over time. You can collect them in a glass bottle or wait for the fry to hatch.
+* **🎨 Tropical Fish Genetics:** When breeding, tropical fish mix their parents' base and pattern colors, creating uniquely colored offspring.
+* **🐟 Fry (Baby Fish):** Tiny newborn fish that grow into adult ones over time.
+* **🐊 Predators (Pike):** A new dangerous predator introduced to the world. The pike hunts only when hungry, doesn't eat its own fry, and can even attack players underwater.
+* **🥪 Delicacies:** Harvest fish eggs, make caviar sandwiches, or cook some delicious fried pike.
 
-## 🛠 Установка
+## 🛠 Installation
 
-1. Установите **NeoForge** версии **21.1.228** или выше.
-2. Скачайте файл мода `.jar`.
-3. Поместите его в папку `mods` вашего игрового клиента или сервера.
+1. Install **NeoForge** version **21.1.228** or higher.
+2. Download the mod's `.jar` file.
+3. Drop it into the `mods` folder of your game client or server.
 
-## ⚙️ Настройка (Config)
+## ⚙️ Configuration
 
-Мод предоставляет гибкие настройки в файле `darwinfish-server.toml`:
-* `naturalBreeding` — включение/выключение автономного размножения без участия игрока.
-* `eggHatchTimeSeconds` — время до вылупления икры.
-* `starvationTime` — время, через которое щука снова проголодается.
+The mod provides flexible settings in the `darwinfish-server.toml` file:
+* `naturalBreeding` — Enable/disable autonomous breeding without player interaction.
+* `eggHatchTimeSeconds` — Time it takes for eggs to hatch.
+* `starvationTime` — Time before a pike gets hungry again.
 
-## 🐛 Сообщить об ошибке
+## 🐛 Bug Reporting
 
-Если вы нашли баг или у вас есть предложение по улучшению, пожалуйста, создайте тему в разделе [Issues](https://github.com/ТвойНик/DarwinFish/issues).
+If you find a bug or have a suggestion for improvement, please open a thread in the [Issues](https://github.com/retrospectivio/DarwinFish/issues) tab.
 
 ---
-*Разработано с любовью к виртуальной экологии под лицензией MIT.*
