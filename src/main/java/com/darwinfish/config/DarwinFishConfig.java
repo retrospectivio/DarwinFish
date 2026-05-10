@@ -14,7 +14,6 @@ public class DarwinFishConfig {
     // Настройки экосистемы (Перенаселение и голод)
     public static final ModConfigSpec.IntValue MAX_FISH_PER_CHUNK;
     public static final ModConfigSpec.IntValue OVERPOPULATION_TOLERANCE;
-    public static final ModConfigSpec.IntValue STARVATION_TIME;
 
     static {
         BUILDER.push("Behavior");
@@ -42,10 +41,6 @@ public class DarwinFishConfig {
         OVERPOPULATION_TOLERANCE = BUILDER
                 .comment("Время (в секундах), которое рыба терпит тесноту перед нападением на сородичей")
                 .defineInRange("overpopulationTolerance", 60, 1, 3600);
-
-        STARVATION_TIME = BUILDER
-                .comment("Время (в секундах) без еды, после которого рыба теряет способность к размножению и начинает атаковать")
-                .defineInRange("starvationTime", 300, 1, 86400);
 
         BUILDER.pop();
     }

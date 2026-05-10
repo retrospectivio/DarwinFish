@@ -10,53 +10,34 @@ import java.util.List;
 
 public class FishSurvivalGoal extends Goal {
     private final AbstractFish fish;
-    private int hungerTicks = 0;
     private int checkCooldown = 0;
 
     public FishSurvivalGoal(AbstractFish fish) {
         this.fish = fish;
-        // Оставляем только флаг движения, так как атаковать мы больше никого не будем
         this.setFlags(EnumSet.of(Goal.Flag.MOVE));
-    }
-
-    public void resetHunger() {
-        this.hungerTicks = 0;
-    }
-
-    public boolean isStarving() {
-        return this.hungerTicks > (DarwinFishConfig.STARVATION_TIME.get() * 20);
     }
 
     @Override
     public boolean canUse() {
-        // Таймер для оптимизации (чтобы не сканировать рыб каждый тик)
         if (this.checkCooldown > 0) {
             this.checkCooldown--;
-            this.hungerTicks++;
             return false;
         }
         this.checkCooldown = 20;
-        this.hungerTicks += 20;
 
-        // Сканируем соседей только для проверки перенаселения
         List<? extends AbstractFish> neighbors = this.fish.level().getEntitiesOfClass(
                 AbstractFish.class,
                 this.fish.getBoundingBox().inflate(8.0D)
         );
 
-        boolean isOverpopulated = neighbors.size() > DarwinFishConfig.MAX_FISH_PER_CHUNK.get();
-
-        // Если рыб слишком много, заставляем их немного расплыться в стороны
-        if (isOverpopulated) {
+        if (neighbors.size() > DarwinFishConfig.MAX_FISH_PER_CHUNK.get()) {
             fleeFromCrowd(neighbors);
         }
 
-        // Мы вырезали каннибализм, поэтому ИИ выживания больше не переходит в активную фазу атаки
         return false;
     }
 
     private void fleeFromCrowd(List<? extends AbstractFish> neighbors) {
-        // Мирная логика побега: плывем в противоположную сторону от ближайшего соседа
         for (AbstractFish neighbor : neighbors) {
             if (neighbor != this.fish) {
                 Vec3 fleeDir = this.fish.position().subtract(neighbor.position()).normalize().scale(5.0);

@@ -55,7 +55,7 @@ public class PikeEntity extends Salmon {
     }
 
     public void feed() {
-        this.ticksUntilHungry = 12000; // Наелась на полдня (12000 тиков)
+        this.ticksUntilHungry = 6000;
         this.setTarget(null);          // Мгновенно теряет интерес к недоеденным жертвам
     }
 

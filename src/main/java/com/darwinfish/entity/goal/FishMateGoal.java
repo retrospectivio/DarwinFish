@@ -22,18 +22,6 @@ public class FishMateGoal extends Goal {
     @Override
     public boolean canUse() {
         if (!this.fish.getData(ModAttachments.FISH_LOVE.get()).isInLove()) return false;
-
-        // НОВЫЙ КОД: Проверяем, не голодает ли наша рыба
-        // Сканируем все активные цели сущности в поисках инстинкта выживания
-        boolean isStarving = this.fish.goalSelector.getAvailableGoals().stream()
-                .map(net.minecraft.world.entity.ai.goal.WrappedGoal::getGoal)
-                .filter(goal -> goal instanceof FishSurvivalGoal)
-                .map(goal -> (FishSurvivalGoal) goal)
-                .anyMatch(FishSurvivalGoal::isStarving);
-
-        // Если рыба голодна, романтика отменяется
-        if (isStarving) return false;
-
         if (this.delay > 0) {
             this.delay--;
             return false;
