@@ -9,6 +9,10 @@ import net.minecraft.world.entity.animal.TropicalFish;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
+import net.minecraft.world.entity.SpawnPlacementTypes;
+import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.entity.animal.WaterAnimal;
 
 @EventBusSubscriber(modid = DarwinFish.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class Registry {
@@ -32,5 +36,23 @@ public class Registry {
                 .add(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE, 1.0D)
                 .add(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED, 2.0D)
                 .build());
+    }
+
+    @SubscribeEvent
+    public static void registerSpawnPlacements(RegisterSpawnPlacementsEvent event) {
+        event.register(
+                ModEntities.PIKE.get(),
+                SpawnPlacementTypes.IN_WATER,
+                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                WaterAnimal::checkSurfaceWaterAnimalSpawnRules,
+                RegisterSpawnPlacementsEvent.Operation.REPLACE
+        );
+        event.register(
+                ModEntities.BABY_PIKE.get(),
+                SpawnPlacementTypes.IN_WATER,
+                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                WaterAnimal::checkSurfaceWaterAnimalSpawnRules,
+                RegisterSpawnPlacementsEvent.Operation.REPLACE
+        );
     }
 }
